@@ -1996,11 +1996,13 @@ progress {
 
 .form-control {
   display: block;
-  width: 100%;
+  width: 75%;
+  
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  margin-bottom: 20px;
   color: #212529;
   background-color: #fff;
   background-clip: padding-box;
@@ -2039,6 +2041,7 @@ progress {
 .form-control::placeholder {
   color: #6c757d;
   opacity: 1;
+  font-size: smaller;
 }
 .form-control:disabled {
   background-color: #e9ecef;

@@ -277,12 +277,15 @@
                        
                         <form action="https://formspree.io/f/mgejqgoj" class="form-signup" id="contactForm"  method="POST">
                             
-                            <div class="row input-group-newsletter">
+                            <div class="col input-group-newsletter">
                                 <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" name="email" /></div>
+                                <div class="col"><input class="form-control" id="name" type="text" placeholder="Name" aria-label="Name" data-sb-validations="Please enter name" name="name" required minlength="3" /></div>
+                                <div class="col"><textarea class="form-control" id="name" type="text" placeholder="Message" aria-label="Name" data-sb-validations="please leave a message" name="message"></textarea></div>
                                 <div class="col-auto"><button class="btn btn-primary" id="submitButton" type="submit">Submit</button></div>
                             </div>
                             <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
                             <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="name:name">Please enter a name</div>
                             <!-- Submit success message-->
                             <!---->
                             <!-- This is what your users will see when the form-->
